@@ -65,47 +65,42 @@
         <div class="style_switcher" id="style-switcher">
           <ul class="style_list grid">
             <li class="style_item">
-              <a href="#home" class="nav_link active-link">
+              <a href="#" class="style_link active-link">
                 <i class="uil uil-estate nav_icon"></i> Home
               </a>
             </li>
             <li class="style_item">
-              <a href="#about" class="nav_link">
+              <a href="#" class="style_link">
                 <i class="uil uil-user nav_icon"></i> About
               </a>
             </li>
             <li class="style_item">
-              <a href="#skills" class="nav_link">
+              <a href="#" class="style_link">
                 <i class="uil uil-file-alt nav_icon"></i> Skills
               </a>
             </li>
             <li class="style_item">
-              <a href="#services" class="nav_link">
+              <a href="#" class="style_link">
                 <i class="uil uil-briefcase-alt nav_icon"></i> Services
               </a>
             </li>
             <li class="style_item">
-              <a href="#portfolio" class="nav_link">
+              <a href="#" class="style_link">
                 <i class="uil uil-scenery nav_icon"></i> Portfolio
               </a>
             </li>
             <li class="style_item">
-              <a href="#contact" class="nav_link">
+              <a href="#" class="style_link">
                 <i class="uil uil-message nav_icon"></i> Contactme
               </a>
             </li>
           </ul>
-          <i class="uil uil-times nav_close" id="nav-close"></i>
+          <i class="uil uil-times style_close" id="style-close"></i>
         </div>
 
         <div class="nav_btns">
           <!-- Theme change button -->
           <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-          <!-- style switcher -->
-          <div class="nav-switcher">
-            <i class="uil uil-cog"></i>
-          </div>
 
           <div class="nav_toggle" id="nav-toggle">
             <i class="uil uil-apps"></i>
@@ -114,9 +109,27 @@
       </nav>
     </header>
 
+    <div class="switcher_button">
+      <div class="s_toggle" id="s-toggle">
+        <i class="uil uil-cog"></i>
+      </div>
+      <div class="day-night">
+        <i class="uil uil-moon" id=""></i>
+      </div>
+      <h4>Theme Colors</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
+    </div>
+
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
+
       <section class="home section" id="home">
         <div class="home_container container grid">
           <div class="home_content grid">
@@ -806,8 +819,14 @@
     <!--==================== MIXITUP ====================-->
     <script src="assets/js/mixitup.min.js"></script>
 
+    <!--==================== Style Switcher JS ====================-->
+    <script src="assets/js/style-swtcher.js"></script>
+
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+
+    <!--==================== Style Switcher JS ====================-->
+    <script src="assets/js/style-swtcher.js"></script>
 
     <script>
       const tabLinks = document.getElementsByClassName("tab-links");
